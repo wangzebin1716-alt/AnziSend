@@ -2,7 +2,7 @@
 
 AnziSend 用于在电脑和移动设备之间发送文件和消息。身边互传优先走局域网，跨区域时可尝试互联网直连。Windows 还可在本机用 AI 整理收到的文件。
 
-[官网与下载](https://www.anzisend.cn/) · [GitHub Releases](https://github.com/wangzebin1716-alt/AnziSend/releases) · [用户反馈](https://github.com/wangzebin1716-alt/AnziSend/issues/new/choose)
+[官网与下载](https://www.anzisend.cn/) · [GitHub Releases](https://github.com/wangzebin1716-alt/AnziSend/releases)
 
 ## 功能介绍
 
@@ -36,4 +36,4 @@ AnziSend 用于在电脑和移动设备之间发送文件和消息。身边互�
 
 ## 用户反馈
 
-登录 GitHub 后即可[报告问题或提交建议](https://github.com/wangzebin1716-alt/AnziSend/issues/new/choose)。请写明 AnziSend 版本、操作系统、双方网络类型、操作步骤和看到的结果。Issue 公开可见，请仅填写可以公开的信息。
+打开 AnziSend 软件，进入「反馈建议」填写问题或改进建议。反馈连接问题时，可附上软件版本、操作系统、双方网络类型、操作步骤和看到的结果。
