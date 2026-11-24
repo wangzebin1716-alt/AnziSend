@@ -16,8 +16,8 @@ AnziSend 用于电脑与手机之间收发文件。在家可以互传照片和�
 | **自动发现有补扫** | 组播发现后仍会补扫，帮助找到未响应组播的设备。build132 按各网卡的实际 IPv4 子网掩码补扫，每个接口最多探测 512 个地址，限时 12 秒。 |
 | **多网卡与切网发现** | 默认纳入符合条件的 IPv4 网卡。Wi‑Fi 切到网线时，如果之前的扫描还在运行，客户端会保留最新的刷新请求，等旧扫描结束后再执行。 |
 | **搜不到就用连接码或地址** | 接收端可以离线显示局域网连接码。Android 可扫描二维码，电脑可粘贴连接码。知道对方地址时，也可以直接输入 IPv4 地址和端口。 |
-| **切网后重新确认设备** | build133 将把旧网络的设备移出在线列表，等待新网络重新确认。已核对设备可优先验证旧地址，组播和网段补扫仍会继续。 |
-| **连接失败时提供诊断** | build133 的发送页将支持直接打开「连接码或地址」，无需先选文件。能区分连接超时、地址不可达、端口拒绝、证书指纹不符等情况。 |
+| **切网后重新确认设备** | build133 会把旧网络的设备移出在线列表，等待新网络重新确认。已核对设备可优先验证旧地址，组播和网段补扫仍会继续。 |
+| **连接失败时提供诊断** | build133 的发送页可直接打开「连接码或地址」，无需先选文件。能区分连接超时、地址不可达、端口拒绝、证书指纹不符等情况。 |
 | **连接码核对接收端指纹** | 连接码用于 IPv4 和 HTTPS，连接时核对接收端的证书指纹。同名设备较多时，可以用接收端当面出示的连接码确认目标。 |
 | **有内网路径就优先使用** | 对已核对身份的设备，发送前优先验证局域网地址。内网不可达且存在可用的跨网路径时，可在开始传输前改走该路径。 |
 | **大文件中断可以续传** | 两端均支持续传时，可以从已保存的进度继续。重试时还可以尝试同一设备已确认的其他局域网地址。 |
@@ -80,17 +80,17 @@ AnziSend 用于电脑与手机之间收发文件。在家可以互传照片和�
 
 ## 平台与下载
 
-以下为 **AnziSend 1.18.3-build132 公开测试版**的下载包。[查看版本说明](https://github.com/wangzebin1716-alt/AnziSend/releases/tag/v1.18.3-build132)
+Windows、Android 和 Linux 已提供 **AnziSend 1.18.3-build133 公开测试版**。macOS 可下载 build132。[查看版本说明](https://github.com/wangzebin1716-alt/AnziSend/releases/tag/v1.18.3-build133)
 
 | 平台 | 安装包 | 说明 |
 | --- | --- | --- |
-| Windows x64 | [轻量版](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-windows-x64-light-unsigned-setup.exe) · [离线 AI 完整版](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-windows-x64-unsigned-setup.exe) | 两款均为未签名测试安装包。 |
-| Android ARM64 | [签名 APK](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-android-arm64-release.apk) | 适用于 ARM64 Android 设备。 |
-| Linux x64 | [AppImage](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-linux-x64.AppImage) | 适用于 x86‑64 Linux。 |
-| macOS | [通用测试包 ZIP](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-macos-universal-unsigned.zip) | 支持 Apple 芯片和 Intel 架构。未进行 Developer ID 签名和 Apple 公证，尚未在 Mac 实机验证，系统可能阻止打开。 |
+| Windows x64 | [轻量版](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build133/AnziSend-1.18.3-build133-windows-x64-light-unsigned-setup.exe) · [离线 AI 完整版](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build133/AnziSend-1.18.3-build133-windows-x64-unsigned-setup.exe) | 两款均为未签名测试安装包。 |
+| Android ARM64 | [签名 APK](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build133/AnziSend-1.18.3-build133-android-arm64-release.apk) | 适用于 ARM64 Android 设备。 |
+| Linux x64 | [AppImage](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build133/AnziSend-1.18.3-build133-linux-x64.AppImage) | 适用于 x86‑64 Linux。 |
+| macOS | [build132 通用测试包 ZIP](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/AnziSend-1.18.3-build132-macos-universal-unsigned.zip) | 支持 Apple 芯片和 Intel 架构。未进行 Developer ID 签名和 Apple 公证，尚未在 Mac 实机验证，系统可能阻止打开。 |
 | iOS / iPadOS | 暂无原生安装包 | 可尝试从浏览器使用网页版。 |
 
-下载后可用 [SHA256SUMS.txt](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build132/SHA256SUMS.txt) 校验所有安装包。
+下载后可用 [build133 校验文件](https://github.com/wangzebin1716-alt/AnziSend/releases/download/v1.18.3-build133/SHA256SUMS.txt) 核验 Windows、Android 和 Linux 安装包。macOS 包可在 [build132 发布页](https://github.com/wangzebin1716-alt/AnziSend/releases/tag/v1.18.3-build132) 查看校验文件。
 
 ### 第一次下载怎么选
 
